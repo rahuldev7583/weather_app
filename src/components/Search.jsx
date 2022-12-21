@@ -24,14 +24,14 @@ function Search() {
     setCity("");
     setIsSent(
       <div className="bg-gray-400 text-white mt-4 ml-20 border rounded-2xl p-2 w-[60%] h-[70%] ">
-        <h2 className="font-semibold text-xl">{city}</h2>
+        <h2 className="font-semibold text-xl mt-2">{city}</h2>
         <h1 className="text-4xl font-bold">{data.main.temp}°C</h1>
         <p className="text-base">feel {data.main.feels_like}°C</p>
         <p className="">{data.weather[0].description}</p>
 
         <p>Wind {Math.floor(data.wind.speed * 3.6)}km/h</p>
         <p>Humidity {data.main.humidity}%</p>
-        <p>Pressure {data.main.pressure}hPa</p>
+        <p>Pressure {data.main.pressure} hPa</p>
         <p>Sunrise: {localSunriseTime}</p>
         <p>Sunset : {localSunsetTime}</p>
         <img
@@ -69,7 +69,7 @@ function Search() {
         />
         <br />
         <button
-          className="bg-gray-400 text-white  border rounded-lg pl-4 pr-4 pt-1 pb-1"
+          className="bg-gray-400 text-white  border rounded-lg pl-4 pr-4 pt-1 pb-1 font-medium"
           type="submit"
         >
           submit

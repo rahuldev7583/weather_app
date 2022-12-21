@@ -7,7 +7,7 @@ function Bottom() {
   return (
     <div
       className={
-        "fixed bottom-0 left-0 right-0 text-gray-600 bg-gray-200 text-center  bg-gray pt-1"
+        "fixed bottom-0 left-0 right-0 text-gray-600 bg-gray-200 text-center  bg-gray pt-1 font-light text-base"
       }
     >
       created by
