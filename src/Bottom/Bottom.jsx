@@ -12,7 +12,7 @@ function Bottom() {
     >
       created by
       <a
-        href="https://legendary-paprenjak-c7072d.netlify.app/"
+        href="https://rahuldev7583.github.io/portfolio/"
         className="underline ml-2"
       >
         Rahul Dev
@@ -24,7 +24,7 @@ function Bottom() {
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/rahuldev_75">
+          <a href="https://twitter.com/rahul_dev75">
             <img className="ml-10 w-10" src={Twitter} alt="TwitterIcon" />
           </a>
         </li>
