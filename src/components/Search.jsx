@@ -23,10 +23,10 @@ function Search() {
     const localSunsetTime = sunsetDate.toLocaleTimeString().slice(0, 4);
     setCity("");
     setIsSent(
-      <div className="bg-gray-400 text-white mt-4 ml-20 border rounded-2xl p-2 w-[60%] h-[70%] ">
-        <h2 className="font-semibold text-xl mt-2">{city}</h2>
-        <h1 className="text-4xl font-bold">{data.main.temp}°C</h1>
-        <p className="text-base">feel {data.main.feels_like}°C</p>
+      <div className="bg-gray-400 text-white mt-4 ml-20 border rounded-2xl p-2 w-[60%] h-[70%] md:ml-[35%] md:w-[23%] md:p-1 md:ml-[39%] md:mt-2">
+        <h2 className="font-semibold text-xl mt-2 md:text-2xl">{city}</h2>
+        <h1 className="text-4xl font-bold md:text-6xl">{data.main.temp}°C</h1>
+        <p className="text-base md:text-lg">feel {data.main.feels_like}°C</p>
         <p className="">{data.weather[0].description}</p>
 
         <p>Wind {Math.floor(data.wind.speed * 3.6)}km/h</p>
@@ -35,7 +35,7 @@ function Search() {
         <p>Sunrise: {localSunriseTime}</p>
         <p>Sunset : {localSunsetTime}</p>
         <img
-          className="ml-12"
+          className="ml-12 md:ml-24"
           src={
             "https://openweathermap.org/img/wn/" +
             data.weather[0].icon +
@@ -59,7 +59,7 @@ function Search() {
     <div>
       <form onSubmit={handleSubmit}>
         <input
-          className="border border-gray-400 rounded-lg m-2 pl-4 w-[50%]"
+          className="border border-gray-400 rounded-lg m-2 pl-4 w-[50%] md:w-56 md:h-8 md:mt-2"
           id="search"
           name="search"
           type="search"
@@ -69,7 +69,7 @@ function Search() {
         />
         <br />
         <button
-          className="bg-gray-400 text-white  border rounded-lg pl-4 pr-4 pt-1 pb-1 font-medium"
+          className="bg-gray-400 text-white  border rounded-lg pl-4 pr-4 pt-1 pb-1 font-medium md:text-2xl md:pt-2 md:pb-2 md:mt-1 md:rounded-2xl"
           type="submit"
         >
           submit

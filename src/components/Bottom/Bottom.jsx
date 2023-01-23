@@ -7,7 +7,7 @@ function Bottom() {
   return (
     <div
       className={
-        "fixed bottom-0 left-0 right-0 text-gray-600 bg-gray-200 text-center  bg-gray pt-1 font-light text-base"
+        "fixed bottom-0 left-0 right-0 text-gray-600 bg-gray-200 text-center  bg-gray pt-1 font-light text-base md:text-lg"
       }
     >
       created by
@@ -17,10 +17,10 @@ function Bottom() {
       >
         Rahul Dev
       </a>
-      <ul className="flex">
+      <ul className="flex md:ml-[35%]">
         <li>
           <a href="mailto: rahuldev7583@gmail.com" className="">
-            <img className="ml-10 w-10" src={Gmail} alt="GmailIcon" />
+            <img className="ml-10 w-10 " src={Gmail} alt="GmailIcon" />
           </a>
         </li>
         <li>
@@ -39,7 +39,7 @@ function Bottom() {
           </a>
         </li>
       </ul>
-      <p className="text-xs">© 2022 Rahul Dev. All right reserved.</p>
+      <p className="text-xs md:text-sm">© 2022 Rahul Dev. All right reserved.</p>
     </div>
   );
 }
