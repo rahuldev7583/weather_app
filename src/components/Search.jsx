@@ -23,7 +23,7 @@ function Search() {
     const localSunsetTime = sunsetDate.toLocaleTimeString().slice(0, 4);
     setCity("");
     setIsSent(
-      <div className="bg-gray-400 text-white mt-4 ml-20 border rounded-2xl p-2 w-[60%] h-[70%] md:ml-[35%] md:w-[23%] md:p-1 md:ml-[39%] md:mt-2">
+      <div className="bg-gray-400 text-white mt-4 ml-20 border rounded-2xl p-2 w-[60%] h-[70%]  md:w-[23%] md:p-1 md:ml-[39%] md:mt-2 lg:mt-8">
         <h2 className="font-semibold text-xl mt-2 md:text-2xl">{city}</h2>
         <h1 className="text-4xl font-bold md:text-6xl">{data.main.temp}°C</h1>
         <p className="text-base md:text-lg">feel {data.main.feels_like}°C</p>
